@@ -1,65 +1,64 @@
+ /* ===== NAV RULE ===== */
+    nav {
+      background-color: #003366;
+      padding: 1rem;
+    }
 
-main {
-    max-width: 840px;
-    margin: 1rem auto;
-    padding: 1rem;
-}
+    /* ===== NAV A RULE ===== */
+    nav a {
+      color: white;
+      padding: 0.5rem;
+      display: block;
+      text-decoration: none;
+    }
 
+    /* ===== H1 RULE ===== */
+    h1 {
+      color: #003366;
+    }
 
-aside {
-    width: 300px;
-    margin: 1rem auto;
-    border: 1px solid #999;
-    padding: 1rem;
-    background-color: #f4f4f4;
-    color: #000;
-    text-align: center;
-}
+    /* ===== MAIN RULE ===== */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 1rem;
+    }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    /* ===== MAIN IMG RULE ===== */
+    main img {
+      width: 150px;
+      height: auto;
+      border: 1px solid #000;
+      padding: 2px;
+      box-shadow: 0 0 10px gray;
+    }
 
-header {
-    padding: 1rem;
-    background-color: #003366;
-    color: white;
-    text-align: center;
-}
+    /* ===== ASIDE RULE ===== */
+    aside {
+      width: 300px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      color: #333;
+      text-align: center;
+    }
 
-nav{
-    background-color: #000;
-    padding: 6px;
-}
+    /* ===== ASIDE IMG RULE ===== */
+    aside img {
+      width: 200px;
+      height: auto;
+    }
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
+    /* ===== P RULE ===== */
+    p {
+      padding: 0;
+    }
 
-
-
-/* Profile image styling */
-main img {
-    width: 150px;
-    height: auto;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-p {
-    padding: 0;
-}
-
-footer {
-    margin-top: 2rem;
-    border-top: 1px solid #999;
-    text-align: center;
-    padding: 1rem;
-}
+    /* ===== FOOTER RULE ===== */
+    footer {
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      padding: 10px;
+    }
