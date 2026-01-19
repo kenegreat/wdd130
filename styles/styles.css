@@ -1,0 +1,64 @@
+ /* ===== NAV RULE ===== */
+ nav {
+     background-color: #003366;
+     padding: 1rem;
+ }
+
+ /* ===== NAV A RULE ===== */
+ nav a {
+     color: white;
+     padding: 0.5rem;
+     display: block;
+     text-decoration: none;
+ }
+
+ /* ===== H1 RULE ===== */
+ h1 {
+     color: #003366;
+ }
+
+ /* ===== MAIN RULE ===== */
+ main {
+     max-width: 800px;
+     margin: 20px auto;
+     padding: 1rem;
+ }
+
+ /* ===== MAIN IMG RULE ===== */
+ main img {
+     width: 150px;
+     height: auto;
+     border: 1px solid #000;
+     padding: 2px;
+     box-shadow: 0 0 10px gray;
+ }
+
+ /* ===== ASIDE RULE ===== */
+ aside {
+     width: 300px;
+     margin: 20px auto;
+     border: 1px solid #ccc;
+     padding: 1rem;
+     background-color: #f5f5f5;
+     color: #333;
+     text-align: center;
+ }
+
+ /* ===== ASIDE IMG RULE ===== */
+ aside img {
+     width: 200px;
+     height: auto;
+ }
+
+ /* ===== P RULE ===== */
+ p {
+     padding: 0;
+ }
+
+ /* ===== FOOTER RULE ===== */
+ footer {
+     margin-top: 30px;
+     border-top: 1px solid #ccc;
+     text-align: center;
+     padding: 10px;
+ }
