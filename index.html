@@ -1,36 +1,112 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Nnaji Kene Charles | WDD 130 </title>
+  <meta charset="UTF-8">
+  <title>WDD 130 | Home</title>
+
+  <!-- Required META tags -->
+  <meta name="description" content="Kene Nnaji WDD 130 Web Fundamentals course home page showcasing assignments and learning progress.">
+  <meta name="author" content="Kene Nnaji">
+
+  <!-- Embedded CSS -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 1rem;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 1rem;
+    }
+
+    /* Profile image styling */
+    main img {
+      width: 150px;
+      height: auto;
+    }
+
+    aside {
+      width: 300px;
+      margin: 1rem auto;
+      border: 1px solid #999;
+      padding: 1rem;
+      background-color: #f4f4f4;
+      color: #000;
+      text-align: center;
+    }
+
+    aside img {
+      width: 200px;
+      height: auto;
+    }
+
+    p {
+      padding: 0;
+    }
+
+    footer {
+      margin-top: 2rem;
+      border-top: 1px solid #999;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
-        </nav>
-    </header>
+  <header>
+    <h1>WDD 130: Web Fundamentals</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">W1</a>
+      <a href="#">W2</a>
+      <a href="#">W3</a>
+      <a href="#">W4</a>
+      <a href="#">W5</a>
+      <a href="#">W6</a>
+      <a href="#">W7</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1> Nnaji Kene Charles | WDD 130</h1>
+  <main>
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Photo of Kene Nnaji">
+    <p>
+      My name is Kene Nnaji. I am currently studying Web Fundamentals (WDD 130)
+      and learning how to build and style websites using HTML and CSS.
+    </p>
+  </main>
 
-        <img src="./images/profile.jpg" alt="Profile photo of Nnaji Kene Charles" width="200">
+  <!-- REQUIRED ASIDE -->
+  <aside>
+    <h2>Nigeria</h2>
+    <img src="images/nigeria.jpg" alt="Map or landmark representing Nigeria">
+    <p>
+      Nigeria is a country in West Africa known for its rich culture, diverse ethnic
+      groups, and vibrant economy. It is often called the Giant of Africa.
+    </p>
+  </aside>
 
-        <p>
-            Hello! My name is Nnaji Kene Charles. I am from Jos, Plateau State, Nigeria.
-            I enjoy traveling and learning new web development skills.
-        </p>
-    </main>
-
-    <footer>
-        <p>
-            &copy;  2026 Nnaji Kene Charles | Nigeria
-        </p>
-    </footer>
+  <footer>
+    <p>© 2026 | Kene Nnaji | Nigeria</p>
+  </footer>
 
 </body>
 </html>
