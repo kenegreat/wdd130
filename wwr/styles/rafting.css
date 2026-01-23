@@ -1,9 +1,27 @@
-* {
+/* =========================
+   CSS VARIABLES
+========================= */
+:root {
+    --primary-color: #000000;
+    --accent1-color: #000000;
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: Georgia, serif;
+}
+
+/* =========================
+   RESET
+========================= */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   BASE STYLES
+========================= */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
@@ -30,10 +48,23 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+/* =========================
+   NAVIGATION
+========================= */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
     position: relative;
 }
@@ -44,18 +75,51 @@ article {
     height: auto;
 }
 
-h1 {
+/* Hero Heading */
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
+    opacity: 0.7;
 }
 
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px;
+    max-width: 600px;
+}
+
+/* Hero Article Image */
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 16px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: 32px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 16px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: auto;
 }
