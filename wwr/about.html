@@ -12,53 +12,103 @@
 </head>
 
 <body>
-    <header>
-        <img src="./images/logo.jpg" alt="WhiteWater Rafting logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="header-content">
+            <img src="images/logo.jpg" alt="WhiteWater Rafting logo" class="logo">
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="hero">
-            <h1>WhiteWater Rafting</h1>
-            <img src="./images/hero-bg.jpg" alt="Whitewater rafting adventure on a river">
-            <article>
-                <img src="./images/hero.jpg" alt="Rafting team navigating river rapids">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>White Water Rafting</h1>
+
+            <img src="images/hero-bg.jpg" alt="White water rafting adventure" class="hero-bg">
+
+            <article class="hero-article">
+                <img src="images/hero.jpg" alt="Rafting team navigating rapids">
                 <p>
-                    At WhiteWater Rafting, we are passionate about delivering thrilling and unforgettable river
-                    adventures. Our experienced guides, top-quality equipment, and commitment to safety ensure
-                    every trip is exciting, fun, and memorable for all skill levels.
+                    At WhiteWater Rafting, we specialize in thrilling river adventures.
+                    Our experienced guides and commitment to safety ensure unforgettable
+                    experiences for beginners and experts alike.
                 </p>
             </article>
-        </div>
-
-        <section id="history">
-            <h2>History</h2>
-            <p>
-                WhiteWater Rafting was founded with a love for the outdoors and a desire to share the excitement
-                of whitewater adventures with others. Over the years, we have grown into a trusted rafting company,
-                known for our professionalism, safety standards, and unforgettable experiences.
-            </p>
         </section>
 
-        <section>
+        <!-- HISTORY SECTION -->
+        <section class="history">
+            <h2>History</h2>
+
+            <div class="history-grid">
+                <p>
+                    WhiteWater Rafting began with a passion for adventure and a deep
+                    respect for nature. Our founders wanted to share the excitement
+                    of whitewater rafting with the world.
+                </p>
+
+                <img src="images/hero-bg.jpg" alt="Rafting history"> <!-- replace with history image -->
+
+                <p>
+                    Over the years, we’ve grown into a trusted rafting company known
+                    for professionalism, safety, and unforgettable river experiences.
+                </p>
+            </div>
+        </section>
+
+        <!-- ADVENTURE SECTION -->
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
+
+            <div class="adventure-gallery">
+                <!-- replace the imgees with the correct image -->
+                <figure>
+                    <img src="images/hero-bg.jpg" alt="River rafting">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/hero-bg.jpg" alt="Rafting team">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/hero-bg.jpg" alt="Whitewater rapids">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/hero-bg.jpg" alt="Calm river rafting">
+                    <figcaption>Devil’s Canyon</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/hero-bg.jpg" alt="Rafting splash">
+                    <figcaption>Sunset Rapids</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 | WhiteWater Rafting | Kene Nnaji</p>
-        <nav class="socialmedia">
-            <a href="#"><img src="./images/facebook.png" alt="Facebook icon"></a>
-            <a href="#"><img src="./images/instagram.png" alt="Instagram icon"></a>
-            <a href="#"><img src="./images/linkedin.png" alt="LinkedIn icon"></a>
-        </nav>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 | WhiteWater Rafting | Kene Nnaji</p>
+
+            <nav class="socialmedia">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </nav>
+        </div>
     </footer>
 </body>
+
 </html>
