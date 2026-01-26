@@ -2,9 +2,9 @@
    VARIABLES
 ========================= */
 :root {
-    --primary-color: #6c5ce7;
+    --primary-color: #6c5ce7; /* now used for hero article background accent */
     --dark-color: #2d3436;
-    --light-color: #f5f5f5;
+    --light-color: #f5f5f5;   /* now used for footer background */
     --max-width: 1000px;
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: Georgia, serif;
@@ -13,7 +13,7 @@
 /* =========================
    RESET
 ========================= */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,13 +58,11 @@ img {
     align-items: center;
 }
 
-/* Logo */
 .logo {
     width: 80px;
     justify-self: start;
 }
 
-/* Navigation */
 .navigation {
     list-style: none;
     display: flex;
@@ -83,8 +81,8 @@ img {
    HERO
 ========================= */
 .hero {
-    position: relative;
-    height: 450px;              /* Explicit hero height */
+    position: relative; /* required for absolute children */
+    height: 450px;              
     overflow: hidden;
 }
 
@@ -107,11 +105,12 @@ img {
 }
 
 .hero-article {
-    position: absolute;
+    position: absolute; /* must overlay hero image */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--primary-color); /* now using --primary-color */
+    color: white;
     padding: 1.5rem;
     width: 70%;
     max-width: 700px;
@@ -123,6 +122,7 @@ img {
 
 .hero-article img {
     width: 140px;
+    float: right; /* fix for article image float */
 }
 
 /* =========================
@@ -172,7 +172,7 @@ img {
    FOOTER
 ========================= */
 .site-footer {
-    background-color: #e5dbff;
+    background-color: var(--light-color); /* now using --light-color */
     padding: 1rem 0;
     margin-top: 3rem;
 }
@@ -187,7 +187,7 @@ img {
 
 .footer-content p {
     grid-column: 2;
-    justify-self: center; /* clearer intent */
+    justify-self: center;
     text-align: center;
 }
 
@@ -196,6 +196,11 @@ img {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none; 
+    color: var(--dark-color);
 }
 
 .socialmedia img {
