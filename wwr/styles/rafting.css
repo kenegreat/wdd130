@@ -81,7 +81,7 @@ img {
    HERO
 ========================= */
 .hero {
-    position: relative; /* required for absolute children */
+    position: relative;
     height: 450px;              
     overflow: hidden;
 }
