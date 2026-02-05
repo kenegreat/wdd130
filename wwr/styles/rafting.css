@@ -213,10 +213,19 @@ img {
     width: 32px;
 }
 
-/* About MAIN */
+/* =========================
+   MAIN CONTACT LAYOUT
+========================= */
+
 .contact-main {
-    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
+
+/* =========================
+   COMPANY INFO
+========================= */
 
 .company-info {
     text-align: center;
@@ -227,88 +236,140 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* MAP + FORM */
+.company-info p {
+    margin: 0.2rem 0;
+}
+
+/* =========================
+   MAP + FORM SECTION
+========================= */
+
 .contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 2rem;
+    align-items: flex-start;
     margin-bottom: 3rem;
+}
+
+/* Map on the left */
+.map {
+    flex: 1;
 }
 
 .map img {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Label + input side-by-side */
 .contact-form label {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
-.contact-form label input {
-    flex: 1;
+/* Inputs sizing */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 65%;
+    padding: 0.4rem;
 }
 
-.textarea {
+/* Textarea below label */
+.contact-form .textarea {
     flex-direction: column;
     align-items: flex-start;
 }
 
+.contact-form textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* =========================
+   RADIO BUTTONS
+========================= */
+
 .contact-form fieldset {
     border: none;
     padding: 0;
-    margin-bottom: 1rem;
-
 }
 
 .contact-form legend {
-    margin-bottom: 0.5rem;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
+/* Stack radios vertically */
 .contact-form fieldset label {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
     gap: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
+/* =========================
+   CHECKBOX
+========================= */
+
+.contact-form .checkbox {
+    justify-content: flex-start;
+    gap: 0.5rem;
 }
 
-.contact-form textarea {
-    height: 100px;
-}
+/* =========================
+   SUBMIT BUTTON
+========================= */
 
-.checkbox {
-    display: none;
-}
-
-button {
-    padding: 0.6rem;
-    width: 100%;
-    background: #eee;
-    border: 1px solid #999;
+.contact-form button {
+    align-self: flex-start;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #555;
+    background-color: #f0f0f0;
     cursor: pointer;
 }
 
-/* EMPLOYEES */
+.contact-form button:hover {
+    background-color: #ddd;
+}
+
+/* =========================
+   EMPLOYEES SECTION
+========================= */
+
 .employees {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
     text-align: center;
 }
 
 .employee-cards {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.employee {
+    flex: 1;
 }
 
 .employee img {
-    width: 120px;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 0.5rem;
 }
