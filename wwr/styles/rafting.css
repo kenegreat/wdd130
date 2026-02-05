@@ -2,9 +2,11 @@
    VARIABLES
 ========================= */
 :root {
-    --primary-color: #6c5ce7; /* now used for hero article background accent */
+    --primary-color: #6c5ce7;
+    /* now used for hero article background accent */
     --dark-color: #2d3436;
-    --light-color: #f5f5f5;   /* now used for footer background */
+    --light-color: #f5f5f5;
+    /* now used for footer background */
     --max-width: 1000px;
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: Georgia, serif;
@@ -13,7 +15,9 @@
 /* =========================
    RESET
 ========================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +32,8 @@ body {
     background-color: white;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     text-align: center;
 }
@@ -82,7 +87,7 @@ img {
 ========================= */
 .hero {
     position: relative;
-    height: 450px;              
+    height: 450px;
     overflow: hidden;
 }
 
@@ -124,7 +129,6 @@ img {
     width: 140px;
     float: right;
 }
-
 
 /* =========================
    HISTORY
@@ -173,7 +177,8 @@ img {
    FOOTER
 ========================= */
 .site-footer {
-    background-color: var(--light-color); /* now using --light-color */
+    background-color: var(--light-color);
+    /* now using --light-color */
     padding: 1rem 0;
     margin-top: 3rem;
 }
@@ -200,10 +205,110 @@ img {
 }
 
 .socialmedia a {
-    text-decoration: none; 
+    text-decoration: none;
     color: var(--dark-color);
 }
 
 .socialmedia img {
     width: 32px;
+}
+
+/* About MAIN */
+.contact-main {
+    padding: 2rem;
+}
+
+.company-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.company-info h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* MAP + FORM */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-form label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form label input {
+    flex: 1;
+}
+
+.textarea {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 1rem;
+
+}
+
+.contact-form legend {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.checkbox {
+    display: none;
+}
+
+button {
+    padding: 0.6rem;
+    width: 100%;
+    background: #eee;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+/* EMPLOYEES */
+.employees {
+    text-align: center;
+}
+
+.employee-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.employee img {
+    width: 120px;
 }
